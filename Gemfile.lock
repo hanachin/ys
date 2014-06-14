@@ -7,13 +7,26 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    atabodi (0.0.1)
+      jsonism
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
     i18n (0.6.9)
     json (1.8.1)
+    json_schema (0.1.4)
+    jsonism (0.0.4)
+      activesupport
+      faraday
+      faraday_middleware
+      json_schema
     mem (0.1.1)
     minitest (5.3.4)
+    multipart-post (2.0.0)
     pusher-client (0.5.0)
       json
       websocket (~> 1.1.2)
@@ -23,6 +36,8 @@ GEM
       dotenv
       mem
       slop
+    ruboty-icon_roulette (0.0.1)
+      atabodi
     ruboty-idobata (0.0.3)
       pusher-client (~> 0.5.0)
       ruboty (~> 1.0.1)
@@ -36,5 +51,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  atabodi
   ruboty
+  ruboty-icon_roulette
   ruboty-idobata
