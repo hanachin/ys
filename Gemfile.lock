@@ -36,4 +36,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ruboty
   ruboty-idobata
